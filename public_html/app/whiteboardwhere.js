@@ -12,7 +12,7 @@
 angular.module('whiteboardwhere', [
     'ngResource',
     'whiteboardwhere.home',
-    'whiteboardwhere.takepic',
+    'whiteboardwhere.success',
     'whiteboardwhere.upload'
     
 ]).config(['$httpProvider', function($httpProvider) {

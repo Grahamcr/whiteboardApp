@@ -28,7 +28,7 @@
             return function(scope, element, attrs){
                 element.bind("click", function(){
                     
-                    window.open("#/takepicture","_self");
+                    window.open("#/upload","_self");
 
                     
                 });

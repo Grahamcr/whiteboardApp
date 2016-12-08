@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    angular.module('whiteboardwhere.takepic')
+    angular.module('whiteboardwhere.success')
     
     
     
