@@ -11,7 +11,7 @@
   ********************************************************************************/
   function Upload($scope, $location, $window){
       Webcam.attach( '#camera-viewport' );
-      $scope.title = "Take Picture";
+      $scope.title = "Capture Picture of Whiteboard";
       
       /*******************************************************************************
       *  Global Variables
