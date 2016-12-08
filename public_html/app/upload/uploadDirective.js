@@ -41,20 +41,23 @@
             };
         }])
     
-    
+
+
         /***************************************************************************************
         * Pass the variable to the api call so that it can be uploaded ****************************************************************************************/ 
         .directive("uploadSnapshot", ['$location', function($location){
             return function(scope, element, attrs){
                 element.bind("click", function(){
                        
-                    var url = "#/success?img="+scope.test;
-                    window.open(url,"_self");
+                    window.open("#/success","_self");
                     
                     
                 });
             };
         }])
+    
+
+    
 
     
         ;

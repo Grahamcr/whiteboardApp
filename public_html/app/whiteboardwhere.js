@@ -17,7 +17,11 @@ angular.module('whiteboardwhere', [
     
 ]).config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.withCredentials = true;
-}]);
+}])
+
+
+
+;
 
 
 
