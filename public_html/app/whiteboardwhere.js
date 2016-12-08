@@ -12,7 +12,7 @@
 angular.module('whiteboardwhere', [
     'ngResource',
     'whiteboardwhere.home',
-    'whiteboardwhere.secondpage'
+    'whiteboardwhere.takepic'
     
 ]).config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.withCredentials = true;

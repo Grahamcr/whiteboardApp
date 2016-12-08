@@ -3,13 +3,13 @@
 
   'use strict';
 
-  angular.module('whiteboardwhere.secondpage')
-    .controller('SecondPageController', SecondPage);
+  angular.module('whiteboardwhere.takepic')
+    .controller('TakePicController', TakePic);
 
   /*******************************************************************************
   * 
   ********************************************************************************/
-  function SecondPage($scope, $location, $window){
+  function TakePic($scope, $location, $window){
       
       
       /*******************************************************************************
