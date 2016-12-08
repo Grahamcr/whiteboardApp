@@ -12,7 +12,8 @@
 angular.module('whiteboardwhere', [
     'ngResource',
     'whiteboardwhere.home',
-    'whiteboardwhere.takepic'
+    'whiteboardwhere.takepic',
+    'whiteboardwhere.upload'
     
 ]).config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.withCredentials = true;
