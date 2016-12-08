@@ -24,11 +24,11 @@
         /***************************************************************************************
         * Redirect the user to the homepage
         ****************************************************************************************/ 
-        .directive("redirectSecondPage", ['$location', function($location){
+        .directive("redirectTakePic", ['$location', function($location){
             return function(scope, element, attrs){
                 element.bind("click", function(){
                     
-                    window.open("#/secondpage","_self");
+                    window.open("#/takepicture","_self");
 
                     
                 });

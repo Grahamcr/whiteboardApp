@@ -1,5 +1,37 @@
 @import "global.less";
 
 #home {
-  
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+    .half-height-section {
+        height: 50%;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        
+        .half-btn-img {
+            height: 40%;
+            width: auto;
+            margin-top: 5%;
+        }
+        
+        .button-title {
+            .white-text();
+            .title();
+        }
+    }
+    #bottom-section {
+        background-color: dodgerblue;
+    }
+    #top-section {
+        background-color:cornflowerblue;
+    }
 }

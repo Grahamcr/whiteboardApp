@@ -3,7 +3,7 @@
   
   'use strict';
 
-  angular.module('whiteboardwhere.secondpage')
+  angular.module('whiteboardwhere.takepic')
     .config(config);
 
   /**
@@ -13,9 +13,9 @@
   function config($routeProvider) 
   {
     $routeProvider
-      .when('/secondpage', {
-        controller: 'SecondPageController',
-        templateUrl: 'app/secondpage/secondpage.html'
+      .when('/takepicture', {
+        controller: 'TakePicController',
+        templateUrl: 'app/takepic/takepic.html'
       });
   }
 
