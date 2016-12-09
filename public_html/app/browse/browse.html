@@ -4,8 +4,11 @@
     <div id="image-area">
         
         <div class="img-wrapper" ng-repeat="img in images">
-            <img src="{{img}}"/>
+            <img src="{{img.url}}"/>
             <img class="upload-icon" src="img/icon_upload_small@2x.png.png"/>
+            <div class="date">
+                <p class="title">{{img.date}}</p>
+            </div>
         </div>
     </div>
     

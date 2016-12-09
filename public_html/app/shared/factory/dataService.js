@@ -9,10 +9,10 @@ angular.module('whiteboardwhere')
 /*****************************************************************************************
 * Used locally for front-end development by Craig to mock JSON for posts
 *****************************************************************************************/
-.factory('DataService', function ($resource, $http) {
+.factory('ImageService', function ($resource, $http) {
     return {
-        getTeamInfo: function () {
-            return $http.get('app/home/exampleInfo/exampleinfo.json');
+        getImageInfo: function () {
+            return $http.get('app/shared/fakeImages.json');
         }
     };
 })
