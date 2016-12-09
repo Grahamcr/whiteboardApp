@@ -31,13 +31,13 @@
 
             document.getElementById("complete").style.display = "inherit";
             
-            var config = {};
+           /* var config = {};
             ImageUploadService.setImageInfo($scope.imageData, config)
              .success(function (data) {
                 
 
 
-            });
+            });*/
       };
       
     
