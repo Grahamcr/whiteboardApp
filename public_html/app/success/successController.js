@@ -9,7 +9,7 @@
   /*******************************************************************************
   * 
   ********************************************************************************/
-  function Success($scope, $location, $window, $routeParams, DataTransferService){
+  function Success($scope, $location, $window, $routeParams, ImageUploadService, DataTransferService){
       
       
       /*******************************************************************************
@@ -20,6 +20,25 @@
 
 
       
+      /*******************************************************************************
+      *  Make a call to the ImageService to upload Base64 image to the image hosting service and modify the screen to show new options to user
+      ********************************************************************************/
+      $scope.upload = function() {
+
+            document.getElementById("success-overlay").style.visibility = "inherit";
+
+            document.getElementById("uploading").style.display = "none";
+
+            document.getElementById("complete").style.display = "inherit";
+            
+            var config = {};
+            ImageUploadService.setImageInfo($scope.imageData, config)
+             .success(function (data) {
+                 $scope.images = data;
+
+
+            });
+      };
       
     
     /***************************************************************************************

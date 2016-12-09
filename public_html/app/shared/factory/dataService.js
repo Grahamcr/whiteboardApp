@@ -17,7 +17,19 @@ angular.module('whiteboardwhere')
     };
 })
 
+.factory('ImageUploadService', function ($resource, $http) {
+    return {
+        setImageInfo: function(data, config) {
+            $http.post("url", data, config)
+            .success(function (data, status, headers, config) {
+            })
+            .error(function (data, status, header, config) {
+            });
+        }
+    };
+})
 
+        
 .factory('DataTransferService', function() {
     var savedData = {}
     function set(data) {
