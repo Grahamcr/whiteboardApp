@@ -34,7 +34,7 @@
             var config = {};
             ImageUploadService.setImageInfo($scope.imageData, config)
              .success(function (data) {
-                 $scope.images = data;
+                
 
 
             });
