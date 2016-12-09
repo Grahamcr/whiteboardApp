@@ -13,7 +13,8 @@ angular.module('whiteboardwhere', [
     'ngResource',
     'whiteboardwhere.home',
     'whiteboardwhere.success',
-    'whiteboardwhere.upload'
+    'whiteboardwhere.upload',
+    'whiteboardwhere.browse'
     
 ]).config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.withCredentials = true;
