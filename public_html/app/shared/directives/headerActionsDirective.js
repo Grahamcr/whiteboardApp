@@ -24,11 +24,26 @@
         /***************************************************************************************
         * Redirect the user to the homepage
         ****************************************************************************************/ 
+        .directive("redirectBrowse", ['$location', function($location){
+            return function(scope, element, attrs){
+                element.bind("click", function(){
+                    
+                    window.open("#/browse","_self");
+
+                    
+                });
+            };
+        }])
+    
+    
+        /***************************************************************************************
+        * Redirect the user to the homepage
+        ****************************************************************************************/ 
         .directive("redirectTakePic", ['$location', function($location){
             return function(scope, element, attrs){
                 element.bind("click", function(){
                     
-                    window.open("#/takepicture","_self");
+                    window.open("#/upload","_self");
 
                     
                 });

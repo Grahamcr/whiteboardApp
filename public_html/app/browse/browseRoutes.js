@@ -3,7 +3,7 @@
   
   'use strict';
 
-  angular.module('whiteboardwhere.takepic')
+  angular.module('whiteboardwhere.browse')
     .config(config);
 
   /**
@@ -13,9 +13,9 @@
   function config($routeProvider) 
   {
     $routeProvider
-      .when('/takepicture', {
-        controller: 'TakePicController',
-        templateUrl: 'app/takepic/takepic.html'
+      .when('/browse', {
+        controller: 'BrowseController',
+        templateUrl: 'app/browse/browse.html'
       });
   }
 

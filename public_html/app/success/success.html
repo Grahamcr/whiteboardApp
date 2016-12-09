@@ -1,0 +1,27 @@
+<header></header>
+<div id="success-page">
+    <div id="title-wrapper">
+        <p id="name-photo">Photo Name:</p>
+        <input type="text" value="<CURRENT TIME GOES HERE>" name="yourName" onfocus="if(this.value == '<CURRENT TIME GOES HERE>') { this.value = ''; }" onblur="if(this.value == '') { this.value = '<CURRENT TIME GOES HERE>'; }">
+    </div>
+    <div id="img-wrapper">
+        <div id="success-overlay">
+            <img src="img/icon_rebus@2x.png"/>
+            <p id="title">Rebus!</p>
+            <p id="sub-title">(That's Latin for success, you uncultured swine)</p>
+            
+        </div>
+        <img src="{{imageData}}"/>
+    </div>
+    <div class="bottom-btns" id="uploading">
+        <p class="button-title" ng-click="upload();">Upload <img src="img/icon_upload_small_noshadow@2x.png"/></p>
+        <p id="cancel" cancel>Cancel</p>
+    </div>
+    
+    <div class="bottom-btns" id="complete">
+        <p class="button-title" redirect-take-pic>Upload Another Photo <img src="img/icon_upload_small_noshadow@2x.png"/></p>
+        <p class="button-title" id="gallery" redirect-browse>View Photo Gallery <img src="img/icon_arrow.svg"/></p>
+    </div>
+    
+</div>
+

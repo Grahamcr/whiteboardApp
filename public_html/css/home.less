@@ -11,27 +11,66 @@
     text-align: center;
     
     .half-height-section {
-        height: 50%;
+        height: 45%;
         width: 100%;
+
         display: inline-block;
         text-align: center;
         cursor: pointer;
         
         .half-btn-img {
-            height: 40%;
-            width: auto;
+            height: 50%;
             margin-top: 5%;
+            width: auto;
         }
         
         .button-title {
             .white-text();
-            .title();
+            .button-style();
+            width:200px;
+            left: 50%;
+            position: relative;
+            margin-left: -130px;
+            
+            img {
+                height: 18px;
+                margin-left: 10px;
+                margin-top: 2px;
+            }
         }
     }
     #bottom-section {
-        background-color: dodgerblue;
+        background-color: @primary-color;
     }
     #top-section {
-        background-color:cornflowerblue;
+        background-color:@primary-color;
+        margin-bottom: 5%;
+    }
+    
+    /* This is the "OR" divider that's on the homescreen */
+    #divider
+    {
+      width:100%;
+      background:rgba(255,255,255,0.5);
+      text-align:center;
+      height:1px;
+      position: absolute;
+        z-index: 15px;
+        top: 45%;
+    }
+
+    #divider span
+    {
+      background:#fff;
+      color:#786f81;
+      font-family:"Droid Serif";
+      font-size:12px;
+      font-weight:700;
+      text-transform:uppercase;
+      text-align:center;
+      padding:10px;
+      position:relative;
+      bottom:10px;
+      border-radius:50%;
     }
 }

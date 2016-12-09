@@ -12,11 +12,17 @@
 angular.module('whiteboardwhere', [
     'ngResource',
     'whiteboardwhere.home',
-    'whiteboardwhere.takepic'
+    'whiteboardwhere.success',
+    'whiteboardwhere.upload',
+    'whiteboardwhere.browse'
     
 ]).config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.withCredentials = true;
-}]);
+}])
+
+
+
+;
 
 
 
